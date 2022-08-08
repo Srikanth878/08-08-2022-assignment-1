@@ -1,0 +1,20 @@
+#include<stdio.h>//fancy number 
+int main()
+{
+   int even=0,odd=0;
+   int n,r;
+   scanf("%d",&n);
+   for(;n>0;)
+   {
+    r=n%10;
+    if(r%2==0)
+    even=even+1;
+    else
+    odd=odd+1;
+    n=n/10;
+    }
+  if(even==odd)
+printf("Fancy number");
+else
+printf("Not Fancy number");
+}
